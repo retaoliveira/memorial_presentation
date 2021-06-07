@@ -1,0 +1,438 @@
+---
+title: "Sobre reduzir distâncias"
+subtitle: "Memorial para "  
+author: 
+  - "Renata Lúcia Magalhães de Oliveira"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "slides.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+---
+
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{css include=FALSE}
+.panelset {
+   --panel-tab-foreground: currentColor;
+   --panel-tab-background: unset;
+   --panel-tab-active-foreground: currentColor;
+   --panel-tab-active-background: unset;
+   --panel-tab-active-border-color: currentColor;
+   --panel-tab-hover-foreground: currentColor;
+   --panel-tab-hover-background: unset;
+   --panel-tab-hover-border-color: currentColor;
+   --panel-tab-inactive-opacity: 0.5;
+   --panel-tabs-border-bottom: #ddd;
+   --panel-tab-font-family: Sen;
+   --panel-tab-background-color-active: #fffbe0;
+   --panel-tab-border-color-active: #023d4d;
+}
+
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+
+.panelset .panel-tabs {
+  font-size: 0.5rem;
+}
+```
+
+
+## Proposta de avaliação da aprendizagem
+
+- Laboratórios - 5 pontos
+
+- Projeto integrador   
+  - parcial (10 pontos)   
+  - final (20 pontos)   
+  - apresentação (15 pontos)   
+  - avaliação pelos pares (15 pontos)   
+  
+- Engajamento - 5 pontos   
+
+---
+## Recursos necessários
+
+Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.
+Os softwares a serem instalados são: 
+- R - https://cran.r-project.org/bin/windows/base/
+- RStudio - https://rstudio.com/products/rstudio/download/
+- Git - https://git-scm.com/downloads
+
+Os alunos deverão ter uma conta gratuita na plataforma `github.com`. Recomendamos também que se cadastrem no [RPubs](https://rpubs.com/)
+
+Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
+
+---
+## Comunicação
+
+.midi[
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Dados-adm>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
+
+Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
+
+1. Verifique se a sua dúvida já foi respondida em algum post no canal `discussão` no `Teams`
+2. Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`. 
+]
+> Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
+
+---
+
+## Políticas institucionais e da disciplina
+
+.panelset[
+.panel[.panel-name[Como interagir?]
+
+.midi[
+O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o canal `discussão` no `Teams`. Sua participação no Fórum será considerada para a avaliação desse curso no atributo `Engajamento`. 
+
+1. Resposta a perguntas postadas pelos estudantes no canal `discussão` no `Teams`. 
+2. Participação em discussões e trabalhos em grupo na sala de aula. 
+3. Identificação de problemas em relação à documentação apresentada.
+]
+]
+
+.panel[.panel-name[Como agir?]
+.midi[
+Os estudantes e professores têm a responsabilidade de manter um ambiente de aprendizagem adequado e motivante. 
+
+A cortesia profissional e a sensibilidade são especialmente importantes no que diz respeito a indivíduos e discussões que lidam com diferenças de raça, cor, cultura, religião, credo, política, status de veterano, orientação sexual, gênero, identidade e expressão de gênero, idade, deficiência e nacionalidades. 
+
+As listas de classes são fornecidas ao instrutor com o nome legal do aluno. Terei prazer em honrar seu pedido de dirigir-se a você por um nome alternativo ou pronome de gênero. Por favor, me informe essa preferência no início do semestre para que eu possa fazer as mudanças apropriadas em seus registros. Não serão tolerados atos de discriminação ou assédio contra ou por qualquer funcionário ou estudante.
+]]
+
+.panel[.panel-name[Como trabalhar?]
+.midi[
+Honestidade acadêmica é um princípio fundamental desta disciplina. Desonestidade acadêmica configura-se por: cópias literais de textos ou ideias sem citação de fonte, fabricações e falsificações de qualquer natureza, plágio, mentira, suborno, comportamento ameaçador ou cumplicidade com desonestidade acadêmica em qualquer nível. 
+
+Os estudantes que forem considerados em violação da política de integridade acadêmica estarão sujeitos tanto a sanções acadêmicas do membro docente quanto a sanções não acadêmicas. Se você tiver alguma dúvida sobre citações adequadas, configuração de plágio, etc., por favor, não hesite em perguntar!
+]]
+]
+
+---
+
+class: center, middle
+
+## Escreva sua definição de ciência de dados adicionando um cartão no painel.
+https://padlet.com/renataoliveira/czkontp9cegkgfhx
+
+---
+
+## Análise de dados com R
+.midi[
++ Vamos explorar conceitos, fundamentos e desenvolver habilidades de `análise de dados` para `suporte à tomada de decisão`. 
+
++ FOCO nas informações mais importantes sobre o comportamento de seus clientes, clientes potenciais, externalidades, bem estar organizacional dentre outras dimensões. 
+
++ Dados x Informações 
+
+
++ Big data - combinação de dados caracterizados por volume, variedade e velocidade em que são processados. 
+
++ Small data - análise de um conjunto de dados com um volume e um formato reduzido que fazem com que esses sejam acessíveis, processáveis e compreensíveis. 
+
++ Wide data - análise dos registros por meio da sinergia de diversas fontes de dados (pequenas ou grandes) não-estruturados e estruturados.
+]
+
+
+
+---
+
+## Ciência de dados
+
+```{r, out.width = '100%', fig.align = "center", echo=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/CienciaDeDados.png")
+```
+
+
+---
+
+## Modelo conceitual da análise de dados
+
+![Modelo de Data Science](https://retaoliveira.github.io/relements/figures/dataR.png)
+
+
+---
+
+## Data Wrangling
+
+```{r, out.width = '80%', fig.align = "center", echo=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/data_cowboy.png")
+```
+
+---
+
+## Análise de dados serve para que?
+
++ Caracterização dos fenômenos e descrição dos problemas
+
++ Diagnóstico
+
++ Modelagem preditiva
+
++ Comunicação e processo decisório
+
+---
+class: center, middle
+
+# Sairemos deste curso com mais perguntas do que respostas! 
+
+
+---
+class: center, middle
+
+## O que é o R?
+
+---
+
+## Conhecendo o R
+
+### Interface e funcionalidades
+
+.pull-left[
+Para uso do R no ambiente RStudio, é inicialmente necessário entender o seu funcionamento. O R é uma linguagem de programação, em plataforma open source, desenvolvida para análise de dados. SEJAM BEM VINDOS!
+]
+
+.pull-right[
+```{r, out.width = '100%', fig.align = "center", echo=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/welcome_to_rstats_twitter.png")
+```
+]
+
+---
+
+### Interface e funcionalidades
+
+.pull-left[
+Em um primeiro momento, o conjunto R + RStudio parece pouco amigável, mas com o tempo, é impossível não apaixonar-se pelas infinitas possibilidades que temos ao utilizar o R.
+]
+
+.pull-right[
+```{r, out.width = '100%', fig.align = "center", echo=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/r_first_then.png")
+```
+]
+---
+
+### Interface e funcionalidades
+
+.pull-left[
+A comunidade do R é bastante ampla e colaborativa. Assim: BUSQUE AJUDA!!!!!
+]
+
+.pull-right[
+```{r, out.width = '100%', fig.align = "center", echo=FALSE}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/code_hero_rstats.png")
+```
+]
+
+---
+
+## Variáveis, funções e *packages* 
+
+Sua estrutura fundamenta-se em uma grande variedade de ferramentas quantitativas, organizadas por meio de **objetos**, **funções** e **packages**. A instalação `base` do R já contempla uma série de funções e *packages*. *Packages* adicionais podem ser instalados quando for necessário ou interessante. Para instalação de *packages*, utiliza-se a função `install.packages()`.
+
+---
+
+class: center, middle
+
+# Documentos reprodutíveis
+
+---
+
+## O que é Markdown?
+
+Segundo o criador da linguagem:
+
+> Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+>
+> John Gruber
+
+---
+
+## RMarkdown
+
+.panelset[
+.panel[.panel-name[O que é?]
+
+Vou colocar aqui algumas informações-chave sobre a construção geral de informações a partir do uso do RMarkdown. Entretanto, informações adicionais podem ser obtidas de maneira detalhada no site: 
+
++ [Documentos dinâmicos no R by Fernando Mayer & Walmes Zeviani](http://cursos.leg.ufpr.br/prr/capDocDin.html)
+]
+
+.panel[.panel-name[Organização]
+### Seções e subseções
+
+Para demarcar seções e subseções, utilize os `hashtags`. 
+
+### Listas e ordenação
+
+Basta enumerar:
+
+1. Item 1
+2. Item 2
+
+]
+
+.panel[.panel-name[Imagens]
+
+![Figura 1: RMarkdown](https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png)
+
+]
+
+.panel[.panel-name[Chunks]
+
+```{r}
+x <- rnorm(30)
+x
+
+```
+]
+
+.panel[.panel-name[Mais chunks]
+```{r}
+plot(x)
+```
+]
+]
+
+---
+
+.panelset[
+
+.panel[.panel-name[Visualização]
+
+Também podemos fazer um histograma dessa variável simulada
+
+```{r}
+hist(x)
+```
+
+]
+
+.panel[.panel-name[YAML]
+
+#### `YAML` (Yet Another Markup Language)
+
+No `YAML`, os dados são escritos em forma de lista aninhada. Os metadados em `YAML` são colocados sempre no início de um documento, e são delimitados por `---`. 
+]
+
+.panel[.panel-name[Gerando...]
+
+`knitr`
+
+]
+
+.panel[.panel-name[WOW!]
+
+Na [galeria do RStudio](https://rmarkdown.rstudio.com/gallery.html) diferentes estruturas de informação produzida por meio de `RMarkdown` podem ser encontradas! 
+
+]
+
+.panel[.panel-name[RPubs]
+
+
+No RStudio, crie um novo documento `R Markdown` escolhendo `Arquivo | Novo | R Markdown`.
+Clique no botão `Knit HTML` na barra de ferramentas do doc para visualizar seu documento.
+Na janela de pré-visualização, clique no botão `Publicar`.
+
+É um processo em duas etapas. Na primeira etapa, você precisa registrar uma conta `RPubs` ou fazer o login, caso já tenha uma. Você escreve o título de seu documento e dá uma breve descrição (para que outros possam encontrar seu trabalho a partir da busca). 
+
+Uma vez terminado e clicando no botão `Continue` na parte inferior, você irá diretamente para o artigo publicado. 
+
+Você pode optar por atualizar seu conteúdo.
+
+
+]
+]
+---
+
+# Faça o seu primeiro documento em RMarkdown!
+
+.small[
+
+1. Faça o download do arquivo [`01-covid.Rmd`](https://raw.githubusercontent.com/retaoliveira/relements/main/rmd/01-covid.Rmd?token=AKYVP2VHMCLCBJDWB72BCRDAYPGI2) e salve em um diretório acessível do seu computador. 
+
+2. Abra o arquivo no RStudio: `File | Open File` e navegue até o arquivo `01-covid.Rmd` selecionando-o. 
+
+3. Você identificará o arquivo por meio do `YAML` com `title: "Mortes por COVID-19"`
+
+4. Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do `RMarkdown` para que sejam instalados `packages` necessários para rodar esse `.Rmd`
+
+4. Clique no botão de `knitr`. 
+
+Aprecie o seu primeiro documento! 
+]
+
+---
+
+
+class:  center, middle
+
+## Para a próxima semana...
+
+---
+
+## Para a próxima semana...
+
+1. Todos precisarão instalar o R e o RStudio em seus computadores. As diretrizes para instalação e alguns vídeos com dicas que podem ser úteis estão disponíveis em: https://retaoliveira.github.io/places/conteudo/intro_r/
+
+2. Nosso site está disponível em https://retaoliveira.github.io/places. No Blog temos várias dicas sobre ciências de dados e R. 
+
+3. Temos um canal da disciplina aqui no Teams denominado "Discussão" que tem como objetivo troca de ideias, sugestões e dúvidas. A sua dúvida pode ajudar um colega e um colega por ajudar você quando compartilhamos. 
+
+4. Realizar os cursos no tutorial de R - Swirl.
+
+---
+
+class: inverse, center, middle
+
+# DÚVIDAS?
