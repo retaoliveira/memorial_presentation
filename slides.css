@@ -63,6 +63,10 @@
   color: var(--yellow);
 }
 
+.link_style {
+  color: "#447178"
+}
+
 
 /* Title slide customization */
 .title-slide h1, h2, h3 {
@@ -107,12 +111,15 @@ h1, h2, h3 {
    font-size: 100%;
    font-weight: bold;
 }
-.larger { font-size: 250% }
+.larger { font-size: 250%;
+   font-weight: bold}
 .large { font-size: 120% }
 .midi { font-size: 85% }
 .small { font-size: 70% }
 .xsmall { font-size: 65% }
 .tiny { font-size: 50% }
+
+.bold { font-weight: bold}
 
 .midi .remark-code { font-size: 85%; }
 .small .remark-code { font-size: 70%; }

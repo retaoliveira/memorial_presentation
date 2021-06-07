@@ -46,9 +46,9 @@
   --text-bold-color: #da7965;
   --code-highlight-color: #234742;
   --inverse-text-color: #f4d7d1;
-  --inverse-background-color: #234742;
+  --inverse-background-color: #73637B;
   --inverse-header-color: #d3dad9;
-  --title-slide-background-color: #657e7a;
+  --title-slide-background-color: #73637B;
   --title-slide-text-color: #A7D5E8;
   --header-background-color: #A7D5E8;
   --header-background-text-color: #002b36;
@@ -533,4 +533,9 @@ img, video, iframe {
 /* Datatable headers */
 div.datatables {
     color: #fff;
+}
+
+
+.reduced_opacity {
+  opacity: 0.5;
 }
