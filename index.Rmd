@@ -281,18 +281,19 @@ Estudos operacionais
 ]
 
 
-Análise do Aumento de Confiabilidade das Locomotivas da Rota do Grão a Partir da Implantação do Novo Quadro de Tração da FCA
-
-
-
 .bold[
 
 VPL
 
 PPC
 
+Especialização em Engenharia Ferroviária
 ]
+
+Análise do Aumento de Confiabilidade das Locomotivas da Rota do Grão a Partir da Implantação do Novo Quadro de Tração da FCA
+
 ]
+
 
 ---
 
@@ -771,7 +772,7 @@ Contribuir para a construção de melhores lugares para se viver
 
 .bold[
 .large[
-Comunicação da ciência
+Comunicação da ciência - OpenScience
 ]]
 
 ---
@@ -904,9 +905,11 @@ knitr::include_graphics("img/joao1.png")
 knitr::include_graphics("img/joao2.png")
 ```
 
+
 ---
 
-class: inverse, center
+
+class: inverse
 
 .link_style[
 
@@ -920,11 +923,10 @@ class: inverse, center
 
 ]
 
-E podemos conversar ou trabalhar juntos. Encontre-me em
-<a href="https://twitter.com/retaoliveira" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="logo-twitter"></ion-icon></a>, <a href="https://github.com/retaoliveira" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="logo-github"></ion-icon></a>,
-e
-<a href="mailto:renataoliveira@gmail.com" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="mail-unread-outline"></ion-icon></a>
+---
 
 
-
+class: middle, center
+background-image: url(img/wordcloud.png)
+background-size: cover
 
