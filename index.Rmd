@@ -26,67 +26,6 @@ output:
 ```{r child = "setup.Rmd"}
 ```
 
-```{r xaringan-tile-view, echo=FALSE}
-xaringanExtra::use_tile_view()
-```
-
-```{r xaringan-editable, echo=FALSE}
-xaringanExtra::use_editable(expires = 1)
-```
-
-```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
-xaringanExtra::use_panelset()
-xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
-```
-
-```{r xaringanExtra-clipboard, echo=FALSE}
-htmltools::tagList(
-  xaringanExtra::use_clipboard(
-    button_text = "<i class=\"fa fa-clipboard\"></i>",
-    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
-    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
-  ),
-  rmarkdown::html_dependency_font_awesome()
-)
-```
-
-```{r xaringan-fit-screen, echo=FALSE}
-xaringanExtra::use_fit_screen()
-```
-
-```{r xaringan-extra-styles, echo=FALSE}
-xaringanExtra::use_extra_styles(
-  hover_code_line = TRUE,         #<<
-  mute_unhighlighted_code = TRUE  #<<
-)
-```
-
-```{css include=FALSE}
-.panelset {
-   --panel-tab-foreground: currentColor;
-   --panel-tab-background: unset;
-   --panel-tab-active-foreground: currentColor;
-   --panel-tab-active-background: unset;
-   --panel-tab-active-border-color: currentColor;
-   --panel-tab-hover-foreground: currentColor;
-   --panel-tab-hover-background: unset;
-   --panel-tab-hover-border-color: currentColor;
-   --panel-tab-inactive-opacity: 0.5;
-   --panel-tabs-border-bottom: #ddd;
-   --panel-tab-font-family: Sen;
-   --panel-tab-background-color-active: #fffbe0;
-   --panel-tab-border-color-active: #023d4d;
-}
-
-.panelset .panel-tabs .panel-tab > a {
-	color: #023d4d;
-}
-
-.panelset .panel-tabs {
-  font-size: 0.5rem;
-}
-```
-
 name: xaringan-title
 class: left, middle
 background-image: url(img/flower3.jpg)
@@ -202,27 +141,756 @@ background-size: cover
 
 ---
 
-
+class: bottom, center
 background-image: url(img/all1.jpg)
 background-size: cover
 
+.green[
+.larger[
+Identidade como engenheira
+]
+]
+
 ---
 
-background-image: url(img/room.jpg)
+class: center, middle
+background-image: url(img/room1.jpg)
 background-size: cover
 
-- Grêmio Estudantil da Engenharia Civil
-- Diretório Acadêmico das engenharias
-- Representação discente em reuniões departamentais e em outros colegiados
+.pink[
+.larger[
+Representação discente
+]
+]
 
 ---
 
-# Engenheira? Pesquisadora? Professora? 
+background-image: url(img/mobility.jpg)
+background-size: cover
 
+# Iniciação científica
+
+
+.bold[
+.pull-left[
 “Mobilidade Residencial e Sistema de Transporte na Região Metropolitana de Belo Horizonte” 
-David José Ahouagi Vaz de Magalhães
 
 
+Prof. David José Ahouagi Vaz de Magalhães
+]
+]
+
+
+---
+
+class: bottom, center
+background-image: url(img/transport.jpg)
+background-size: cover
+
+
+.yellow[
+.larger[
+Engenharia de transportes
+]
+]
+
+---
+
+class: bottom, center
+background-image: url(img/forma.jpg)
+background-size: cover
+
+.yellow[
+.larger[
+ 2001/2002
+]]
+
+---
+
+background-image: url(img/ime.jpg)
+background-size: cover
+
+
+# Mestrado
+
+.yellow[
+.pull-left[
+.large[
+Instituto Militar de Engenharia
+
+]
+]
+]
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+.center[
+.larger[
+.yellow[
+2002
+]]]
+
+---
+
+background-image: url(img/change1].jpg)
+background-size: cover
+
+.larger[
+2003
+]
+
+--
+
+.pull-left[
+.large[
+.bold[
+Tectran - Ramón Vitor César   
+]]]
+
+--
+
+.pull-left[
+.large[
+.bold[
+Faculdade Novos Horizontes   
+]]]
+
+--
+
+.pull-left[
+.large[
+.bold[
+Vale - Engenharia Ferroviária
+]
+]
+]
+
+---
+
+.pull-left-wide[
+```{r vale, echo=FALSE, fig.cap="", out.width="100%"}
+knitr::include_graphics("img/vale.png")
+```
+]
+
+.pull-right-narrow[
+.bold[
+
+Estudos operacionais
+]
+
+
+Análise do Aumento de Confiabilidade das Locomotivas da Rota do Grão a Partir da Implantação do Novo Quadro de Tração da FCA
+
+
+
+.bold[
+
+VPL
+
+PPC
+
+]
+]
+
+---
+
+background-image: url(img/master.jpg)
+background-size: cover
+
+.larger[
+2004
+]
+
+.large[
+Modelo Neuro-Fuzzy para Escolha Modal no Transporte de Cargas
+]
+
+Orientação: *Marcus Vinícius Quintella Cury*
+
+.center[
+.larger[
+.pink[
+Subjetividade no processo decisório
+]]]
+
+---
+
+
+.pull-left[
+.large[
+.larger[
+2005
+]
+.bold[
+Faculdade Novos Horizontes   
+
+Fundação Comunitária de Ensino Superior de Itabira
+
+Departamento de Engenharia de Transportes e Geotecnia - UFMG
+]
+]
+]
+
+.pull-right[
+```{r , echo=FALSE, fig.cap="", out.width="100%"}
+knitr::include_graphics("img/teacher.jpg")
+```
+.center[
+.green[
+Concurso para CEFET-MG
+]
+]
+]
+
+
+---
+
+background-image: url(img/cefet1.png)
+
+.larger[
+
+2006 - 2009
+]
+
+
+.bold[
+Cursos técnicos em Transportes e Trânsito
+]
+
+--
+
+.bold[
+Coordenação de laboratórios
+]
+
+--
+
+.bold[
+Coordenação de cursos
+]
+
+--
+
+.bold[
+Engenharia de transportes
+
+
+]
+
+---
+
+background-image: url(img/puc.png)
+background-size: container
+
+.larger[
+2010-2015
+]
+
+
+.bold[
+.large[
+Geografia - Tratamento da informação espacial   
+]]
+
+*Oswaldo Bueno Amorim Filho*   
+*Alexandre Magno Alves Diniz*
+
+.bold[
+.large[
+Período sanduíche no Institut Rhônalpin des Systèmes Complexes   
+]
+]
+
+*Prof. Pablo Jensen*
+
+
+
+---
+
+
+background-image: url(img/mps.jpg)
+background-size: cover
+
+
+.larger[
+2015
+]
+
+.bold[
+.large[
+Análise Espacial dos Preços de Produtos Alimentícios no Varejo de Belo Horizonte e sua relação com a renda média da população   
+Orientação: *Alexandre Magno Alves Diniz*
+
+]]
+
+.center[
+.larger[
+.pink[
+Acessibilidade
+]]]
+
+---
+
+# 2017 - 2021
+
+.bold[
+Programa de mestrado em Geotecnia e Transportes da UFMG   
+]
+
+.midi[
+-   Clarissa Pontes Melo - Análise da macroacessibilidade de pedestres idosos sob a ótica da qualidade do espaço urbano. 2021.
+
+-   André Augusto Cunha Libânio - Avaliação da acessibilidade em cidades brasileiras. 2020.
+
+-   Paulo Henrique Góes Pinto - Identificação e qualificação de centralidades urbanas por meio de estrutura morfológico-funcional: um estudo de caso para a RMBH. 2020.
+
+-   José Moreira Gonçalves - Atração de Viagens de Carga em Indústria Automobilística de Máquinas Agrícolas e Rodoviárias. 2019.
+
+-   Gabriela Pereira Lopes - Uma Análise da Localização de Instalações Logísticas versus Geração de Viagens e os Impactos na mobilidade urbana em Belo Horizonte. 2018.
+]
+
+---
+
+background-image: url(img/cefet1.png)
+
+.bold[
+.larger[
+2015 - 2019  
+]]
+
+Departamento de Engenharia de Transportes   
+Sub-coordenação e depois coordenação da Engenharia de Transportes   
+Introdução à Engenharia de Transportes ❤️   
+Alunos de Iniciação Científica e Iniciação Científica Júnior
+
+.pull-right[
+```{r enge, echo=FALSE, fig.cap="Encontro Nacional dos coordenadores de cursos de graduação", message=FALSE, warning=FALSE, fig.align = 'center',out.width="100%"}
+knitr::include_graphics("img/enges.jpg")
+```
+]
+
+---
+background-image: url(img/cefet1.png)
+
+
+
+.bold[
+.larger[
+2015...   
+Administração
+]]
+
+.bold[
+.midi[
+-   Comitê de Ética em Pesquisa CEP/CEFET-MG;
+-   Câmaras Temáticas da Comissão de Iniciação;
+-   Participação em Bancas Examinadoras do Concurso Público de Provas e Títulos para provimento de cargas da carreira de Magistério do Ensino Básico, Técnico e Tecnológico;
+-   Participação em bancas examinadoras de processo seletivo simplificado para professores substitutos/temporários;
+-   Outras comissões temporárias;
+]]
+
+---
+
+
+.pull-left[
+.bold[
+.larger[
+2017...   
+Pesquisa
+]]
+
+.bold[
+.midi[
+Translog City   
+
+NIUMAR - Network on Intelligent Urban Mobility and Accessibility research ❤️   
+
+PLACES - Planning for Access ❤️  
+
+NOSS - Núcleo de Estudos Organizacionais e Sociedade e Subjetividade ❤️  
+]]
+]
+
+.pull-right[
+    ```{r niumar, echo=FALSE, fig.cap="2o Workshop da NIUMAR", out.width="100%"}
+    knitr::include_graphics("img/niumar.jpg")
+    ```
+]
+
+---
+
+
+.bold[
+.larger[
+Pesquisa
+]]
+
+.pull-left[
+**Revisora**   
+Transportes   
+IEEE Access   
+Sustainable Cities and Society   
+Research in Transportation Economics   
+Transportation Research Record   
+Urban Rail Transit   
+]
+
+.pull-right[
+**Corpo editorial**   
+Caderno de geografia   
+Revista Brasileira de Transportes.   
+]
+
+
+
+
+
+---
+
+.pull-left[
+.bold[
+.larger[
+2018 ...    
+Extensão
+]]
+
+.bold[
+.midi[
+
+Horta da Cidade   
+
+Plano de mobilidade de Paraíso do Tocantins   
+
+I Fórum Brasileiro de Logística Urbana   
+
+PET - Adm ❤️
+]
+]]
+
+.pull-right[
+
+```{r horta, echo=FALSE, fig.cap="Evento no Sebrae - Horta da Cidade", out.width="100%"}
+knitr::include_graphics("img/horta.jpg")
+```
+]
+
+
+---
+
+# 2020 ...
+
+
+.bold[
+Programa de mestrado Administração do CEFET-MG
+]
+
+*Processos e sistemas decisórios em arranjos organizacionais*
+
+-  Sofia Eleutério - trabalho sobre o processo decisório quanto à implementação de faixas exclusivas de ônibus como política pública.
+- Felipe - caracterização da atividade e políticas públicas para vendedores ambulantes em BH   
+- Fernando - Redes sociais para analisar a relação entre filiação partidária e cargos comissionados no governo federal
+
+Colegiado do PPGA
+
+
+---
+
+background-image: url(img/cefet1.png)
+
+.bold[
+.larger[
+2020 ...
+]
+Departamento de Ciências Sociais Aplicadas
+]
+
+*Novas disciplinas*   
+*Novas perspectivas*   
+*Novas parcerias*
+
+Colegiado de Administração
+
+---
+
+.bold[
+.larger[
+2018 ...    
+Internacionalização
+]]
+
+.midi[
+4th VREF Conference. Relationships among urban characteristics, real estate market and spatial patterns of warehouses in different geographic contexts. 2021.
+
+11th International Conference on City Logistics. EXPLORATORY ANALYSIS OF THE ACCESSIBILITY TO FOOD RETAILERS IN BELO HORIZONTE. 2019. 
+
+15th biannual NECTAR Conference. ACCESSIBILITY TO FOOD SYSTEMS IN BELO HORIZONTE, BRAZIL. 2019. ❤️
+
+6th workshop NIUMAR. Projects under development and research agenda. 2019. ❤️
+]
+
+---
+
+.bold[
+.larger[
+2018 ...    
+Internacionalização
+]]
+
+.midi[
+
+1st Brazilian EMI. 2018.
+
+3rd workshop NIUMAR. Perspectivas de parceria. 2018. ❤️
+
+4th workshop NIUMAR. Encaminhamentos. 2018. ❤️
+
+Workshop do Cluster 2 do Nectar. A sustainable business model for urban farming based on city logistics concepts for local production and consumption of vegetables. 2018. ❤️
+
+
+]
+
+---
+
+
+.bold[
+.larger[
+2018 ...    
+Internacionalização
+]]
+
+.midi[
+Efficiency in Urban Logistics: Current challenges, innovative & green solutions. 2017.
+
+Researchers Links Workshop: How the Railways contribute to improving quality of life?. Researchers Links Workshop. 2017. ❤️
+
+2nd workshop da NIUMAR. Desenvolvimento de pesquisa. 2018. (Seminário). ❤️
+
+Semana Internacional de Engenharia Metroferroviária, Transportes e Logística. Análise espacial aplicada a soluções para o último quilômetro. 2017.
+
+
+]
+
+---
+.bold[
+.larger[
+2018 ...    
+Internacionalização
+]]
+
+.midi[
+
+
+Tenth International Conference on City Logistics. Urban Distribution of Craft-Brewed Beer in Belo Horizonte Metropolitan Area. 2017.
+
+Cyprien Legros   
+Jonathan Reith   
+Joanna Wilkolek   
+Neda Marjanovic   
+]
+
+---
+
+.bold[
+.larger[
+2020 - 2021    
+Pós-doutorado remoto
+]]
+
+.bold[
+.large[
+Relationships among urban characteristics, real estate market and spatial patterns of warehouses in different geographic contexts.
+]]
+
+Logistics City Chair, da Université Gustave Eiffel   
+*Laetitia Dablanc*  
+
+
+
+---
+class: center
+background-image: url(img/future.jpg)
+background-size: cover
+
+
+# E o futuro?
+
+
+
+---
+
+class: middle, center
+background-image: url(img/butterfly.jpg)
+background-size: cover
+
+
+---
+
+.bold[
+.large[
+Ensinar sem saber - ser curadora - ensinar a aprender
+]]
+
+--
+
+.bold[
+.large[
+Perspectiva crítica até nas disciplinas mais positivistas
+]]
+
+--
+
+.bold[
+.large[
+Diversão - gamificação e protagonismo do estudante
+]]
+
+--
+
+.bold[
+.large[
+Adaptação - Ensino Remoto Emergencial
+]]
+
+--
+
+.bold[
+.large[
+Estudar, estudar, estudar e estudar mais ainda!
+]]
+
+---
+
+
+class: center
+background-image: url(img/passion.jpg)
+background-size: cover
+
+
+> “Para ENSINAR, necessita-se de Eros” Platão
+
+> Para APRENDER, necessita-se de Eros. Renata
+
+> Para produzir CONHECIMENTO, necessita-se de Eros. Renata
+
+---
+
+class: middle, center
+background-image: url(img/together.jpg)
+background-size: cover
+
+---
+
+class: bottom, center
+background-image: url(img/dist.jpg)
+background-size: cover
+
+.larger[
+Reduzir distâncias....
+]
+---
+
+class: bottom, center
+background-image: url(img/SMILE.jpg)
+background-size: cover
+
+.larger[
+Sempre há esperança!
+]
+
+---
+
+# Inspirações
+
+Camila Soares Henrique Fontanele Garcia
+
+Carlos Felipe Grangeiro Loureiro
+
+André Soares Lopes
+
+Camila Bandeira Cavalcante
+
+Francelino Franco Leite de Matos Sousa
+
+Francisco Gildemir Ferreira da Silva
+
+Bruno Vieira Bertoncini
+
+---
+
+# Inspirações
+
+Lílian dos Santos Fontes Pereira Bracarense
+
+José Geraldo Vidal Vieira
+
+Lucélia Viviane Vaz Raad
+
+Ludmila de Vasconcelos Machado Guimarães
+
+Joana Ancila Pessoa Forte Avelino
+
+E muitas outras pessoas que marcaram minha vida!
+
+
+---
+
+# Onde bate meu coração ...
+
+❤️Maio de 2001 - Começamos a namorar!   
+❤️Setembro de 2001 - Ficamos noivos!   
+❤️Dezembro de 2002 - Moramos juntos!   
+❤️Julho de 2005 - Casamos!   
+❤️Novembro de 2009 - Chegada da Sofia nas nossas vidas!   
+❤️Dezembro de 2012 - Chegada do João nas nossas vidas!   
+❤️Maio de 2021 - Sigo a mulher, mãe, professora, pesquisadora e cidadã mais feliz do mundo!
+
+---
+
+class: center, middle
+
+.larger[
+❤️**Amo vocês!**❤️
+]
+
+---
+
+```{r nos2, echo=FALSE, fig.cap="Respeito", message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/nos2.jpg")
+```
+
+---
+
+```{r nos3, echo=FALSE, fig.cap="Gratidão", message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/nos3.jpg")
+```
+
+---
+
+```{r sofia, echo=FALSE, fig.cap="Fulustreca", message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/sofia1.png")
+```
+
+---
+
+```{r sofia2, echo=FALSE, fig.cap="Zequinha", message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("img/sofia2.png")
+```
+
+---
+
+```{r joao, echo=FALSE, fig.cap="Zezé", message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics("img/joao1.png")
+```
+
+---
+
+```{r joao2, echo=FALSE, fig.cap="Chouchou", message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("img/joao2.png")
+```
 
 ---
 
@@ -246,14 +914,5 @@ e
 <a href="mailto:renataoliveira@gmail.com" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="mail-unread-outline"></ion-icon></a>
 
 
-```{html echo=FALSE}
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-```
 
-<hr> 
 
-Este documento foi construído com o
-<a href="https://retaoliveira.github.io/blog" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="heart-outline"></ion-icon></a>,
-<a href="https://github.com/retaoliveira" target="_blank" rel="noopener" style="color:#447178"><ion-icon name="logo-github"></ion-icon></a>, <a href="https://cran.r-project.org" target="_blank" rel="noopener" style="color:#447178"><i class="fab fa-r-project"></i></a> e
-<a href="https://bookdown.org" target="_blank" rel="noopener" style="color:#447178">xaringan</a>.
-</p>
