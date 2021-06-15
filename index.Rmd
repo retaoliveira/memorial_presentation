@@ -118,14 +118,12 @@ class: center
 background-image: url(img/idaho.jpg)
 background-size: cover
 
---
-
 .pull.right[
-.small[
+
 ```{r echo=FALSE, fig.cap="", out.width="10%", fig.align='right'}
 knitr::include_graphics("img/idaho.png")
 ```
-]
+
 ]
 
 ---
@@ -760,6 +758,18 @@ Adaptação - Ensino Remoto Emergencial
 .bold[
 .large[
 Estudar, estudar, estudar e estudar mais ainda!
+]]
+
+--
+
+.bold[
+.large[
+Contribuir para a construção de melhores lugares para se viver
+]]
+
+.bold[
+.large[
+Comunicação da ciência
 ]]
 
 ---
