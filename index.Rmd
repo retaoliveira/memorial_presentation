@@ -208,6 +208,24 @@ background-size: cover
 
 ---
 
+background-image: url(img/room.jpg)
+background-size: cover
+
+- Grêmio Estudantil da Engenharia Civil
+- Diretório Acadêmico das engenharias
+- Representação discente em reuniões departamentais e em outros colegiados
+
+---
+
+# Engenheira? Pesquisadora? Professora? 
+
+“Mobilidade Residencial e Sistema de Transporte na Região Metropolitana de Belo Horizonte” 
+David José Ahouagi Vaz de Magalhães
+
+
+
+---
+
 class: inverse, center
 
 .link_style[
